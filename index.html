@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.min.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Portfolio</title>
+</head>
+<body>
+    <!--*Dark mode*-->
+    <label for="toggle" id="label_toggle">
+        <img src="./moon.png" alt="Dark mode image">
+    </label>  
+    <input type="checkbox" id="toggle">
+    <div class="container"></div>
+    <!--*Header design*-->
+    <header class="header">
+        <a href="#" class="logo" style="color: chartreuse;">Omar ♱</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <span class="active-nav"></span>
+        </nav>
+    </header>
+
+    <!--*Home*-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hello, I'm <span> Omar Cruz</span></h1>
+            <div class="text-animate">
+                <h3>Frontend Developer</h3>
+            </div>
+            <p>Computer engineering student at Universidad Tecnológica de la Mixteca.
+                <br>
+                Adept in multiple programming languages and offers great task prioritization.
+                <br>
+                Willingness to take on added responsibilities to meet team goals. 
+                <br>
+                Ability to handle multiple projects simultaneously with a high degree of accuracy.
+            </p>
+            <div class="btn-box">
+                <a href="https://drive.google.com/uc?export=download&id=1pgAGwugOyv8h7WPW5P4XM_14uzdrgeGr" class="btn" download="CV.pdf">CV<i class="fas fa-cloud-download-alt"></i></a>
+                <a href="#contact" class="btn">Let's talk.</a>
+            </div>
+            <div class="wrapper">
+                <div class="icon facebook">
+                   <div class="tooltip">
+                      Facebook
+                   </div>
+                   <a href="https://www.facebook.com/Damanger" target="_blank"><span><i class="fab fa-facebook"></i></span></a>
+                </div>
+                <div class="icon whatsapp">
+                    <div class="tooltip">
+                       WhatsApp
+                    </div>
+                    <a href="https://wa.me/5219514084765" target="_blank"><span><i class="fab fa-whatsapp"></i></span></a>
+                </div>
+                <div class="icon instagram">
+                   <div class="tooltip">
+                      Instagram
+                   </div>
+                   <a href="https://www.instagram.com/ich_bin_omarrmz/" target="_blank"><span><i class="fab fa-instagram"></i></span></a>
+                </div>
+                <div class="icon github">
+                   <div class="tooltip">
+                      Github
+                   </div>
+                   <a href="https://github.com/Damanger" target="_blank"><span><i class="fab fa-github"></i></span></a>
+                </div>
+                <div class="icon linkedin">
+                    <div class="tooltip">
+                       LinkedIn
+                    </div>
+                    <a href="https://www.linkedin.com/in/omar-cruzr97" target="_blank"><span><i class="fab fa-linkedin"></i></span></a>
+                 </div>
+            </div>
+        </div>
+        <div class="home-imgHover"><img src="./yo.jpeg"></div>
+    </section>
+
+    <!--*About*-->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-img">
+            <img src="./home.jpg" alt="">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Frontend Developer!</h3>
+            <p>holis</p>
+        </div>
+    </section>
+
+    <!--*Education*-->
+    <section class="education" id="education">
+        <h2 class="heading">My <span>Journey</span></h2>
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+                <div class="education-box">
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2009  - 2012</div>
+                            <h3>English Basic Courses - Private School</h3>
+                            <p>I completed over 50 levels of basic English for children and an additional 15 levels of intermediate English for young learners at a private school.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2009  - 2014</div>
+                            <h3>Music Courses - Private School</h3>
+                            <p>I started taking music lessons at the age of 12 and learned to play the guitar, drums, bass, and a bit of piano.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2009  - 2014</div>
+                            <h3>Tae Kwon Do Courses - Private School</h3>
+                            <p>I started taking Tae Kwon Do lessons at the age of 11 and continued until I was 16 years old. During that time, I achieved success in state and national tournaments, earning several medals.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2012 - 2012</div>
+                            <h3>English Adult Courses - Private School</h3>
+                            <p>Also completed 4 advanced levels of conversational English for adults.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2020 - 2025</div>
+                            <h3>Bachelor's Degree - University</h3>
+                            <p>I am currently pursuing a Bachelor's degree in Computer Engineering and I am in my 6th semester out of 10.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2023 - Today</div>
+                            <h3>ONE - Oracle & Alura</h3>
+                            <p>In this year, I enrolled in a course called Oracle Next Education (ONE), offered by Oracle and Alura. I am currently part of Group 5 and still actively pursuing the program.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+                <div class="education-box">
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2020  - Today</div>
+                            <h3>C programming - University</h3>
+                            <p>I have been studying the C programming language since the first semester and have already completed several projects, including a shell simulator.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2020 - Today</div>
+                            <h3>Python programming - University</h3>
+                            <p>I have been studying the Python programming language since the first semester and have already completed several projects, including a compiled Spanish version of Python.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2021  - Today</div>
+                            <h3>Java programming - University</h3>
+                            <p>Since the third semester, I have been studying the Java programming language and have already completed several projects, including a compiler and complex regex search.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2021 - Today</div>
+                            <h3>Assembler - University</h3>
+                            <p>I have been studying Assembly language since the fourth semester and have already completed several projects, including the Space Invaders game and a Debug simulator.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2021 - Today</div>
+                            <h3>SQL - University</h3>
+                            <p>I have been studying SQL programming language since the fourth semester and have gained practical experience working with databases in various projects.</p>
+                        </div>
+                    </div>
+
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class="bx bxs-calendar"></i>2022 - Today</div>
+                            <h3>Web Developer - University</h3>
+                            <p>I have been studying HTML, CSS, JavaScript, and TypeScript since the fifth semester, utilizing frameworks such as Angular. I have already created several web pages as part of my projects.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*Skills*-->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-row">
+            <div class="skills-column">
+                <h3 class="title">Coding Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3> HTML <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> CSS <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> SQL <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> Python <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> JavaScript <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3> TypeScript <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> Java <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> C <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> Git <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> Assembler <span>65%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-column">
+                <h3 class="title">Professional Skills</h3>
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3> Spanish (Native) <span>100%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> English <span>80%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> Web Design <span>75%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> Web Development <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> Blender<span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                        <div class="progress">
+                            <h3> SolidWorks <span>70%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> Italian <span>30%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3> German <span>20%</span></h3>
+                            <div class="bar"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--*Contact*-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" id="full-name-input" placeholder="Full Name" required pattern="^[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]{2,}(\s[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]{2,})?(\s[a-zA-ZáéíóúÁÉÍÓÚüÜñÑ]{2,}){1,2}$" autocomplete="off">
+                <div class="name-container">
+                    <div class="name-requirements" style="font-size: 1.2rem;">
+                        Enter a valid name.
+                    </div>
+                </div>
+                    <span class="focus"></span>                    
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email-input" placeholder="Email Adress" required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" autocomplete="off">
+                    <div class="email-requirements"  style="font-size: 1.2rem;">
+                        Enter a valid email.
+                    </div>
+                    <span class="focus"></span>                    
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="number" id="phone-number-input" placeholder="Phone Number" required pattern="[0-9]{10,13}" autocomplete="off">
+                        <div class="phone-container">
+                            <div class="phone-requirements"  style="font-size: 1.2rem;">
+                                Phone number must have between 10-13 numbers.
+                            </div>
+                        </div>
+                    <span class="focus"></span>                    
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required autocomplete="off">
+                    <div class="subject-container">
+                        <div class="subject-requirements"  style="font-size: 1.2rem;">
+                            Enter a subject.
+                        </div>
+                    </div>
+                    <span class="focus"></span>                    
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your message goes here" required></textarea>
+                <span class="focus"></span>
+            </div>
+            <div class="btn-box btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <!--*Footer*-->
+    <footer>
+         <div class="footer">
+            <div class="footer-text">
+            <p>Copyright &copy; 2023 by Omar A. Cruz Ramírez All Rights Reserved. </p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
