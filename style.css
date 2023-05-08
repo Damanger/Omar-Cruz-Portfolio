@@ -404,6 +404,10 @@ width: 100%;
     color: #22c55e;
 }
 
+.skills .heading span{
+    color: whitesmoke;
+}
+
 .skills{
     min-height: auto;
     padding-bottom: 7rem;
