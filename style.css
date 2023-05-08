@@ -68,8 +68,7 @@ body{
 }
 
 section{
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    min-height: 90vh;
 }
 
 .home{
@@ -85,8 +84,7 @@ section{
     width: 45rem;
     position: relative;
     top: 25%;
-    right: 0%;
-    left: 15%;
+    left: 10%;
 }
 
 .home-imgHover{
@@ -303,11 +301,15 @@ section{
 
 .about-content h3{
     font-size: 2.6rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-content p{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .education{
@@ -511,10 +513,6 @@ width: 100%;
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(9) .bar span{
     width: 70%;
-}
-
-.skills-column:nth-child(1) .skills-content .progress:nth-child(10) .bar span{
-    width: 65%;
 }
 
 .skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span{
@@ -762,16 +760,8 @@ width: 100%;
     text-shadow: 0rem -0.063rem 0rem rgba(0,0,0,0.4);
 }
 
-.wrapper .facebook span, .wrapper .facebook:hover .tooltip, .wrapper .facebook:hover .tooltip:before{
-    background: #3B5999;
-}
-
 .wrapper .whatsapp span, .wrapper .whatsapp:hover .tooltip, .wrapper .whatsapp:hover .tooltip:before{
     background: #14de36;
-}
-
-.wrapper .instagram span, .wrapper .instagram:hover .tooltip, .wrapper .instagram:hover .tooltip:before{
-    background: #e1306c;
 }
 
 .wrapper .github span, .wrapper .github:hover .tooltip, .wrapper .github:hover .tooltip:before{
