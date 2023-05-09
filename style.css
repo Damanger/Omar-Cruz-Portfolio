@@ -329,6 +329,7 @@ section{
 
 .education-row .education-column{
     flex: 1 1 40rem;
+    margin-left: 1.5rem;
 }
 
 .education-column .title{
@@ -358,10 +359,10 @@ section{
 
 .education-content .content{
     position: relative;
-    padding: 1.5rem;
+    padding: 1rem;
     border: 0.2rem solid #3b82f6;
     border-radius: 0.6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     overflow: hidden;
 }
 
@@ -397,7 +398,7 @@ width: 100%;
 
 .education-content .content p{
     font-size:  1.6rem;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
 }
 
 .skills-column span{
