@@ -131,6 +131,7 @@ section{
     background-image: linear-gradient(#84cc16, #84cc16);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
+    background-clip: inherit;
     background-position: 0 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
@@ -661,8 +662,6 @@ width: 100%;
 
 #label_toggle{
     position: fixed;
-    top: 0.8rem;
-    right: 0.8rem;
     font-size: 1.8em;
     cursor: pointer;
     z-index: 100;
@@ -672,7 +671,7 @@ width: 100%;
     position: fixed;
     height: 4rem;
     width: 4rem;
-    right: 50%;
+    right: 47.25%;
     top: 3%;
     transform: translate(-50%, -50%);
 }
