@@ -301,13 +301,13 @@ section{
 }
 
 .about-content h3{
-    font-size: 2.6rem;
+    font-size: 2.5rem;
     justify-content: center;
     align-items: center;
 }
 
 .about-content p{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin: 2rem 0 3rem;
     justify-content: center;
     align-items: center;
@@ -744,8 +744,9 @@ width: 100%;
 .wrapper{
     display: inline-flex;
     position: relative;
-    top: 10.5rem;
+    top: 10rem;
     left: 0;
+    align-items: center;
 }
   
 .wrapper .icon{
@@ -800,6 +801,17 @@ width: 100%;
     pointer-events: auto;
 }
 
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    }
+}
+
 .icon .tooltip:before{
     position: absolute;
     content: "";
@@ -822,6 +834,10 @@ width: 100%;
 
 .wrapper .whatsapp span, .wrapper .whatsapp:hover .tooltip, .wrapper .whatsapp:hover .tooltip:before{
     background: #14de36;
+    border-radius: 50%;
+    -webkit-animation: pulse-border 1500ms ease-out infinite;
+    animation: pulse-border 1500ms ease-out infinite;
+    top: 1.8rem;
 }
 
 .wrapper .github span, .wrapper .github:hover .tooltip, .wrapper .github:hover .tooltip:before{
