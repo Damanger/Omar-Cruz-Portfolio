@@ -204,7 +204,6 @@ section{
     background-image: linear-gradient(#84cc16, #84cc16);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
-    background-clip: inherit;
     background-position: 0 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
