@@ -321,7 +321,7 @@ section{
 .electron {
     width: 100%;
     height: 100%;
-    font-size: 2rem;
+    font-size: 2.5rem;
     position: absolute;
     animation: rotation 5s infinite linear;
     border-radius: 50%;
