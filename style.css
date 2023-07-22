@@ -1075,6 +1075,15 @@ width: 100%;
     }
 }
 
+::-webkit-scrollbar{
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(transparent, #30ff00);
+    border-radius: 0.5rem;
+}
+
 @media (max-width: 462px){
     .home-content h1{
         font-size: 3rem;
