@@ -51,6 +51,7 @@
             <a href="#about" class="cipher">About</a>
             <a href="#journey" class="cipher">Journey</a>
             <a href="#skills" class="cipher">Skills</a>
+            <a href="#projects" class="cipher">Projects</a>
             <a href="#contact" class="cipher">Contact</a>
             <span class="active-nav"></span>
         </nav>
@@ -409,6 +410,27 @@
         </div>
     </section>
 
+    <!--*Projects*-->
+    <section class="education" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Headphone Raffle</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <a href="#" id="raffle-link">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i>2023</div>
+                                <h3>Oaxaca-México</h3>
+                                <p>Raffle of a Sony headphone</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!--*Contact*-->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
@@ -475,5 +497,17 @@
         </div>
     </footer>
     <script type="text/javascript" src="./script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const raffleLink = document.getElementById("raffle-link");
+            raffleLink.addEventListener("click", function(event) {
+                event.preventDefault(); // Previene la acción predeterminada del enlace
+                
+                // Redirige a rifa.html y actualiza la URL en la barra de direcciones
+                window.history.pushState({}, "", "/raffle");
+                window.location.href = "rifa.html";
+            });
+        });
+        </script>        
 </body>
 </html>
