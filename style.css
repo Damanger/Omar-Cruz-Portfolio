@@ -94,6 +94,7 @@ html{
 body{
     transition: all 1.5s ease;
     color: var(--tex-color);
+    overflow-x: hidden;
 }
 
 .header{
