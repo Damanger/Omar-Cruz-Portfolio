@@ -95,6 +95,19 @@ form.addEventListener('submit', function(event) {
     });
 });
 
+const audioElement = document.getElementById("audio");
+        const playButton = document.getElementById("play-button");
+    
+        function toggleAudio() {
+            if (audioElement.paused) {
+                audioElement.play();
+                playButton.classList.add("playing");
+            } else {
+                audioElement.pause();
+                playButton.classList.remove("playing");
+            }
+        }
+
 //Hace un efecto de srcamble
 window.onload = function () {
     const links = document.querySelectorAll("a.cipher");
