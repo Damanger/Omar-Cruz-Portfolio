@@ -97,6 +97,15 @@ body{
     background-color: aliceblue;
 }
 
+#sticky-image {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    width: 7rem;
+    cursor: pointer;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -125,7 +134,7 @@ body{
     font-size: 1.7rem;
     color: var(--tex-color);
     font-weight: 500;
-    margin-left: 3.5rem;
+    margin-left: 2.5rem;
     transition: 0.5s;
 }
 
@@ -454,7 +463,7 @@ section{
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    background: #1e3a8a;
+    background: #1e3a8a;;
     padding-bottom: 6rem;
     padding: 10rem 4% 5rem 5%;
 }
