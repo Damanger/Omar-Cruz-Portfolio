@@ -99,11 +99,13 @@ body{
 
 #sticky-image {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2rem;
+    right: 4rem;
     z-index: 999;
     width: 7rem;
     cursor: pointer;
+    margin: 0;
+    padding: 0;
 }
 
 .header{
@@ -172,6 +174,8 @@ section{
 
 .home-imgHover{
     position: absolute;
+    margin: 0;
+    padding: 0;
     top: 0;
     right: 0;
     width: 45%;
@@ -1193,6 +1197,8 @@ width: 100%;
         pointer-events: none;
         background: transparent;
         opacity: 0.6;
+        margin: 0;
+        padding: 0;
     }
 
     .footer{
