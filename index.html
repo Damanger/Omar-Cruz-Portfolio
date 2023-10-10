@@ -24,7 +24,10 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <audio autoplay loop src="./song.mp3"></audio>
+    <div class="play-button" id="play-button" onclick="toggleAudio()">
+        <img src="./Ardilla.png" alt="Ardilla" id="sticky-image">
+        <audio id="audio" loop src="./song.mp3"></audio>
+    </div>
     <!--*Dark mode*-->
     <label for="toggle" id="label_toggle">
         <img src="./moon.png" alt="Dark mode image">
@@ -45,7 +48,9 @@
     </div>
     <!--*Header design*-->
     <header class="header">
-        <a href="#" class="logo" style="color: chartreuse;">Omar ♱</a>
+        <a href="#" class="logo" style="color: chartreuse;">
+            Omar ♱
+        </a>
         <div class="bx bx-menu" id="menu-icon"></div>
         <nav class="navbar">
             <a href="#home" class="active cipher">Home</a>
@@ -79,10 +84,10 @@
             </div>
             <div class="wrapper">
                 <div class="icon whatsapp">
-                    <a href="https://wa.me/5219514084765?text=Hello,%20I%20wanted%20to%20reach%20out%20to%20you%20about%20developing%20a%20web%20service." target="_blank">
+                    <a href="https://wa.me/5219514084765?text=Buen%20d%C3%ADa,%20quise%20contactarlo%20para%20desarrollar%20un%20servicio%20web." target="_blank">
                         <span><i class="fab fa-whatsapp"></i></span>
                     </a>
-                </div>
+                </div>                
                 <div class="icon linkedin">
                     <div class="tooltip">
                         LinkedIn
@@ -418,6 +423,7 @@
         <h2 class="heading">My <span>Projects</span></h2>
         <div class="education-row">
             <div class="education-column">
+                <h3 class="title">Headphone Raffle</h3>
                 <div class="education-box">
                     <div class="education-content">
                         <a href="https://damanger.github.io/Headphones-Raffle/" target="_blank" id="raffle-link">
