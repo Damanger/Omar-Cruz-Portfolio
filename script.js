@@ -3,13 +3,13 @@ let toggle = document.getElementById('toggle');
 let label_toggle = document.getElementById('label_toggle');
 toggle.addEventListener('change',(event)=>{
     let checked = event.target.checked;
-    document.body.classList.toggle('dark');
+    document.body.classList.toggle('light');
     if(checked){
-        label_toggle.innerHTML = '<img src="./sun.png" alt="Dark mode image">';
+        label_toggle.innerHTML = '<img src="./moon.png" alt="Dark mode image">';
         label_toggle.style.width = '4rem';
         label_toggle.style.height = '4rem';
     } else{
-        label_toggle.innerHTML = '<img src="./moon.png" alt="Dark mode image">';
+        label_toggle.innerHTML = '<img src="./sun.png" alt="Light mode image">';
         label_toggle.style.width = '4rem';
         label_toggle.style.height = '4rem';
     }
