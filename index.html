@@ -24,13 +24,19 @@
     <title>Portfolio</title>
 </head>
 <body>
+    <div id="loading">
+        <div class="center-content">
+            <h1>Loading...</h1>
+            <img src="./Ardilla.png" alt="Loading..." />
+        </div>
+    </div>    
     <div class="play-button" id="play-button" onclick="toggleAudio()">
         <img src="./Ardilla.png" alt="Ardilla" id="sticky-image">
         <audio id="audio" loop src="./song.mp3"></audio>
     </div>
     <!--*Dark mode*-->
     <label for="toggle" id="label_toggle">
-        <img src="./moon.png" alt="Dark mode image">
+        <img src="./sun.png" alt="Dark mode image">
     </label>  
     <input type="checkbox" id="toggle">
     <div class="container"></div>
@@ -68,7 +74,8 @@
         <div class="home-content">
             <h1>Hello, I'm <span> Omar Cruz</span></h1>
             <div class="text-animate">
-                <h3>Software-Web Developer</h3>
+                <h3>Software-Web
+                    <br>Developer</br></h3>
             </div>
             <p>Computer engineering student at Universidad Tecnológica de la Mixteca.
                 <br>
@@ -109,7 +116,7 @@
     <section class="about" id="about">
         <h2 class="heading">About <span>Me</span></h2>
         <div class="about-img proton">
-            <img src="./home.jpg" alt="selfie">
+            <img src="./yo.png" alt="selfie">
             <span class="circle-spin"></span>
             <div class="electron fa-brands fa-linux"></div>
             <div class="electron fa-brands fa-apple"></div>
@@ -245,49 +252,19 @@
                 <div class="skills-box">
                     <div class="skills-content">
                         <div class="progress">
-                            <h3> HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
+                            <h3> HTML, CSS, SQL, Python, JavaScript, Swift, Java, C, Git</h3>
+                            <div class="centrado">
+                                <i class="icon fa-brands fa-html5"></i>
+                                <i class="icon fa-brands fa-css3-alt"></i>
+                                <i class="icon fa-solid fa-database"></i>
+                                <i class="icon fa-brands fa-python"></i>
+                                <i class="icon fa-brands fa-js"></i>
+                                <i class="icon fa-brands fa-swift"></i>
+                                <i class="icon fa-brands fa-java"></i>
+                                <i class="icon fa-solid fa-c"></i>
+                                <i class="icon fa-brands fa-github"></i>
+                            </div>
                         </div>
-
-                        <div class="progress">
-                            <h3> CSS <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> SQL <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Python <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> JavaScript <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3> TypeScript <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Java <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> C <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Git <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -297,72 +274,22 @@
                 <div class="skills-box">
                     <div class="skills-content">
                         <div class="progress">
-                            <h3> Respectfulness <span>100%</span></h3>
+                            <h3> Respectfulness, Empathic, Motivated, Team-building, Confidence <span>100%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progress">
-                            <h3> Empathic <span>100%</span></h3>
+                            <h3> Analytical thinking, Adaptability, Decision-making <span>90%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progress">
-                            <h3> Confidence <span>100%</span></h3>
+                            <h3> Analysis, Communication, Research, Prioritization <span>85%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progress">
-                            <h3> Motivated <span>100%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Team-building <span>100%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Analytical thinking <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Adaptability <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Decision-making <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Analysis <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Communication <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Research <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Prioritization <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Ambitious<span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Innovation <span>80%</span></h3>
+                            <h3> Ambitious, Innovation<span>80%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
                         
@@ -380,26 +307,12 @@
                         </div>
 
                         <div class="progress">
-                            <h3> English <span>80%</span></h3>
+                            <h3> English, Web Design, Web Development <span>80%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
                         <div class="progress">
-                            <h3> Web Design <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Web Development <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-
-                        <div class="progress">
-                            <h3> Blender<span>75%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3> SolidWorks <span>75%</span></h3>
+                            <h3> Blender, SolidWorks<span>75%</span></h3>
                             <div class="bar"><span></span></div>
                         </div>
 
@@ -421,7 +334,6 @@
     <!--*Projects*-->
     <section class="education" id="projects">
         <h2 class="heading">My <span>Projects</span></h2>
-        <div class="education-row">
             <div class="education-column">
                 <h3 class="title">Headphone Raffle</h3>
                 <div class="education-box">
@@ -434,7 +346,21 @@
                             </div>
                         </a>
                     </div>
-
+                </div>
+                <h3 class="title">Web Browser</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <a href="https://github.com/Damanger/Squirrel-Web-Browser.git" target="_blank" id="web-browser">
+                            <div class="content">
+                                <div class="year"><i class="bx bxs-calendar"></i>2023-today</div>
+                                <h3>Oaxaca-México</h3>
+                                <i class="fa-solid fa-link"> Simple Web Browser in Python </i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <h3 class="title">Virtual-Assistant</h3>
+                <div class="education-box">
                     <div class="education-content">
                         <a href="https://github.com/Damanger/Virtual-Assistant" target="_blank" id="raffle-link">
                             <div class="content">
@@ -444,7 +370,9 @@
                             </div>
                         </a>
                     </div>
-
+                </div>
+                <h3 class="title">LaPI (React)</h3>
+                <div class="education-box">
                     <div class="education-content">
                         <a href="https://org-mu-seven.vercel.app/" target="_blank" id="raffle-link">
                             <div class="content">
@@ -454,7 +382,9 @@
                             </div>
                         </a>
                     </div>
-
+                </div>
+                <h3 class="title">Encrypter</h3>
+                <div class="education-box">
                     <div class="education-content">
                         <a href="https://damanger.github.io/Challenge1-Alura-Oracle-ONE/" target="_blank" id="raffle-link">
                             <div class="content">
@@ -464,7 +394,9 @@
                             </div>
                         </a>
                     </div>
-                    
+                </div>
+                <h3 class="title">Mexico Map</h3>
+                <div class="education-box">
                     <div class="education-content">
                         <a href="https://damanger.github.io/Mexico-svg/" target="_blank" id="raffle-link">
                             <div class="content">
@@ -474,7 +406,9 @@
                             </div>
                         </a>
                     </div>
-                    
+                </div>
+                <h3 class="title">World Map</h3>
+                <div class="education-box">
                     <div class="education-content">
                         <a href="https://damanger.github.io/World-svg/" target="_blank" id="raffle-link">
                             <div class="content">
@@ -484,7 +418,9 @@
                             </div>
                         </a>
                     </div>
-                    
+                </div>
+                <h3 class="title">Rappi-like app</h3>
+                <div class="education-box">
                     <div class="education-content">
                         <a href="https://damanger.github.io/login_UTasteM/" target="_blank" id="raffle-link">
                             <div class="content">
@@ -494,7 +430,9 @@
                             </div>
                         </a>
                     </div>
-
+                </div>
+                <h3 class="title">Spanish Version of Python (compiler)</h3>
+                <div class="education-box">
                     <div class="education-content">
                         <a href="https://github.com/Damanger/Compilador-python" target="_blank" id="raffle-link">
                             <div class="content">
@@ -504,7 +442,9 @@
                             </div>
                         </a>
                     </div>
-
+                </div>
+                <h3 class="title">Carrer Project</h3>
+                <div class="education-box">
                     <div class="education-content">
                         <a href="https://damanger.github.io/login-glassmorphism/" target="_blank" id="raffle-link">
                             <div class="content">
@@ -514,7 +454,9 @@
                             </div>
                         </a>
                     </div>
-                    
+                </div>
+                <h3 class="title">3D Game</h3>
+                <div class="education-box">
                     <div class="education-content">
                         <a href="https://github.com/Damanger/3DGame" target="_blank" id="raffle-link">
                             <div class="content">
@@ -524,7 +466,9 @@
                             </div>
                         </a>
                     </div>
-
+                </div>
+                <h3 class="title">2D Game</h3>
+                <div class="education-box">
                     <div class="education-content">
                         <a href="https://damanger.github.io/Car-Game-Js/" target="_blank" id="raffle-link">
                             <div class="content">
@@ -536,7 +480,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!--*Contact*-->
@@ -604,6 +547,11 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="./script.js"></script>       
+    <script type="text/javascript" src="./script.js"></script> 
+    <script>
+        setTimeout(function() {
+            document.getElementById("loading").style.display = "none";
+        }, 2000);
+    </script>      
 </body>
 </html>
