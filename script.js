@@ -5,13 +5,9 @@ toggle.addEventListener('change',(event)=>{
     let checked = event.target.checked;
     document.body.classList.toggle('light');
     if(checked){
-        label_toggle.innerHTML = '<img src="./moon.png" alt="Dark mode image">';
-        label_toggle.style.width = '4rem';
-        label_toggle.style.height = '4rem';
+        label_toggle.innerHTML = '<img src="./moon.png"></img>';
     } else{
-        label_toggle.innerHTML = '<img src="./sun.png" alt="Light mode image">';
-        label_toggle.style.width = '4rem';
-        label_toggle.style.height = '4rem';
+        label_toggle.innerHTML = '<img src="./sun.png"></img>';
     }
 });
 
