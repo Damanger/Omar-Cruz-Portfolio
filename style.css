@@ -950,10 +950,10 @@ width: 100%;
 
 #label_toggle img{
     position: fixed;
-    height: 4rem;
-    width: 4rem;
-    right: 47.25%;
-    top: 3%;
+    width: 38px;
+    height: 38px;
+    top: 2%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
